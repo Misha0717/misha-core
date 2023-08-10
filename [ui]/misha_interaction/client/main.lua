@@ -6,7 +6,6 @@ local Data = {
 exports("interact", function(msg, type)
     if not Data.Open then 
         Data.Open = true
-        print(msg, type)
         SendNUIMessage({
             open = true,
             message = msg,
@@ -22,12 +21,10 @@ Citizen.CreateThread(function()
         Citizen.Wait(250)
 
         if Data.Open then
-            print(GetGameTimer() - Data.Time)
             if GetGameTimer() - Data.Time > 100 then
                 Data.Time = 0
                 Data.Open = false
 
-                print("close interaction")
                 SendNUIMessage({
                     open = false,
                 })
