@@ -1,8 +1,17 @@
 window.addEventListener("message", function(event) {
     if (event.data.open) {
         ShowInteraction(event.data.message, event.data.type)
+    } else {
+        CloseInteraction()
     }
 })
+
+function CloseInteraction() {
+    $(".display").animate({left: '400px'}, 'slow')
+    setTimeout(() => {
+        $(".display").hide()
+    }, 2000);
+}
 
 function ShowInteraction(msg, style) {
     const element = document.querySelector(".display")
