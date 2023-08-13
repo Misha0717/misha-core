@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    opacity: 95%;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(250, 239, 239) 0%, rgb(255, 230, 230) 5%, rgba(36,81,105,0) 30%);
+}
+
+.Menu {
+    position: relative;
+    background-color: rgb(255, 230, 230);
+    padding: 50px 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    color: black;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.firstname, .lastname, .dateofbirth, .height {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(250, 213, 213);
+    color: rgb(71, 71, 71);
+    height: 30px;
+    border-radius: 5px;
+    border-color: transparent;
+    outline-width: 0; 
+}
+
+.registerbutton {
+    color: white;
+    margin-top: 40px;
+    background-color: rgb(71, 135, 255);
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    transition: 0.2s;
+}
+
+.registerbutton:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    width: 160px;
+    height: 60px;
+}
+
+.errormessage {
+    color: white;
+    margin-top: 30px;
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    transition: 0.2s;
+    position: relative;
+    top: 150px;
+}
+
+.sex-male, .sex-female {
+    color: black;
+    margin-top: 10px;
+    background-color: rgb(252, 96, 96);
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    transition: 0.2s;
+}
+
+.sex-male:hover, .sex-female:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    width: 130px;
+    height: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

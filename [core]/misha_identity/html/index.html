@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="./script.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/34f636af31.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="display: none;">
+        <div class="Menu">
+            <div><input type="text" class="firstname" onclick="Reset('.firstname')" placeholder="Firstname"></div>
+            <div><input type="text" class="lastname" onclick="Reset('.lastname')" placeholder="Lastname"></div>
+            <div><input type="text" class="dateofbirth" onclick="Reset('.dateofbirth')" placeholder ="dateofbirth (17-07-1998)"></div>
+            <div><input type="number" class="height" onclick="Reset('.height')" placeholder="Height (60-200cm)"></div>
+            <div><button class="sex-male" onclick="SelectSex('sex-male')"><i class="fa-solid fa-person"> Male</i></button></div>
+            <div><button class="sex-female" onclick="SelectSex('sex-female')"><i class="fa-solid fa-person-dress"> Female</i></button></div>
+            <div><button class="registerbutton" onclick="Register()">Register</button></div>
+        </div>
+    </body>
+</html>
